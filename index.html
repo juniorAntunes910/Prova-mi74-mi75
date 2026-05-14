@@ -170,148 +170,172 @@
 
         </section>
 
-        <section id="matricula" class="container">
 
-            <h5>
-                Matrícula
-            </h5>
-            <div id="matricula-box">
-                <h6>
-                    Formulário de Matrícula
-                </h6>
-                <form action="#">
-                    <label for="nome">Nome Completo *</label>
-                    <input type="text" placeholder="Digite seu nome completo">
+        <div id="matricula-aside" class="container">
+            <section id="matricula" class="container">
 
-                    <label for="email">Email *</label>
-                    <input type="email" placeholder="Digite seu email">
+                <h5>
+                    Matrícula
+                </h5>
+                <div id="matricula-box">
+                    <h6>
+                        Formulário de Matrícula
+                    </h6>
+                    <form action="#">
+                        <div class="form-desktop">
+                            <div class="label-desktop label-mobile">
+                                <label for="nome"3>Nome Completo *</label>
+                                <input type="text" placeholder="Digite seu nome completo">
+                            </div>
+                            <div class="label-desktop label-mobile">
+                                <label for="email">Email *</label>
+                                <input type="email" placeholder="Digite seu email">
+                            </div>
+                        </div>
+                        <div class="form-desktop">
+                            <div class="label-desktop label-mobile">
+                                <label for="telefone">Telefone *</label>
+                                <input type="text" placeholder="(00) 00000-0000">
+                            </div>
+                            <div class="label-desktop label-mobile">
+                                <label for="cpf">CPF *</label>
+                                <input type="text" placeholder="000.000.000-00">
+                            </div>
+                        </div>
+                        <label for="curso">Curso Desejado *</label>
+                        <input type="text">
 
-                    <label for="telefone">Telefone *</label>
-                    <input type="text" placeholder="(00) 00000-0000">
+                        <div class="form-desktop">
+                            <div class="label-desktop label-mobile">
+                                <label for="cep">CEP *</label>
+                                <input type="text" placeholder="00000-000">
+                            </div>
+                            <div class="label-desktop label-mobile">
 
-                    <label for="cpf">CPF *</label>
-                    <input type="text" placeholder="000.000.000-00">
+                                <label for="rua">Rua *</label>
+                                <input type="text">
+                            </div>
+                        </div>
 
-                    <label for="curso">Curso Desejado *</label>
-                    <input type="text">
+                        <div class="form-desktop">
+                            <div class="label-desktop label-mobile">
+                                <label for="bairro">Bairro *</label>
+                                <input type="text">
+                            </div>
+                            <div class="label-desktop label-mobile">
+                                <label for="cidade">Cidade *</label>
+                                <input type="text">
+                            </div>
+                        </div>
 
-                    <label for="cep">CEP *</label>
-                    <input type="text" placeholder="00000-000">
-
-                    <label for="rua">Rua *</label>
-                    <input type="text">
-
-                    <label for="bairro">Bairro *</label>
-                    <input type="text">
-
-                    <label for="cidade">Cidade *</label>
-                    <input type="text">
-
-                    <label for="estado">Estado *</label>
-                    <input type="text">
-
-                    <button type="submit">Enviar Matrícula</button>
-
-                </form>
-            </div>
-        </section>
-
-        <aside class="container">
-            <h6>Áreas do Conhecimento</h6>
-            <ul>
-                <li>
-                    <p>
-                        Tecnologia da Informação
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        Administração e Negócios
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        Marketing Digital
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        Engenharia
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        Saúde
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        Educação
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        Gastronomia
-                    </p>
-                </li>
-            </ul>
-        </aside>
-    </main>
-    <footer class="container" id="divisao-footer">
-        <div class="divisor"></div>
-        <div>
-            <h6>
-                EduTech Academy
-            </h6>
-            <p>Transformando carreiras através da educação de qualidade desde 2010.</p>
-
-        </div>
-        <div>
-            <h6>
-                Contato
-            </h6>
-            <div id="contato">
-                <div>
-                    <img src="conteudo-atividade/phone.svg" alt="Icone de telefone">
+                        <label for="estado">Estado *</label>
+                        <input type="text" id="label-estado">
+                        <div id="form-btn">
+                            <button type="submit">Enviar Matrícula</button>
+                        </div>
+                    </form>
                 </div>
-                <p>(11) 9999-9999</p>
+            </section>
+
+            <aside class="container">
+                <h6>Áreas do Conhecimento</h6>
+                <ul>
+                    <li>
+                        <p>
+                            Tecnologia da Informação
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Administração e Negócios
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Marketing Digital
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Engenharia
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Saúde
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Educação
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Gastronomia
+                        </p>
+                    </li>
+                </ul>
+            </aside>
+
+        </div>
+    </main>
+    <div class="divisor"></div>
+    <footer>
+        <div id="footer-desktop">
+            <div id="marca">
+                <h6>
+                    EduTech Academy
+                </h6>
+                <p>Transformando carreiras através da educação de <span class="quebra-desktop"></span>qualidade desde
+                    2010.</p>
+
             </div>
-            <p>contato@edutechacademy.com.br</p>
-            <p>AV. Paulista, 1000 - São Paulo/SP</p>
+            <div>
+                <h6>
+                    Contato
+                </h6>
+                <div id="contato">
+                    <div>
+                        <img src="conteudo-atividade/phone.svg" alt="Icone de telefone">
+                    </div>
+                    <p>(11) 9999-9999</p>
+                </div>
+                <p>contato@edutechacademy.com.br</p>
+                <p>AV. Paulista, 1000 - São Paulo/SP</p>
+            </div>
+
+            <div id="social-icons">
+                <h6>Redes Sociais</h6>
+                <ul>
+                    <li>
+                        <div>
+                            <img src="conteudo-atividade/facebook.svg" alt="Icone do Facebook" class="icon">
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="conteudo-atividade/instagram.svg" alt="Icone do Instagram" class="icon">
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="conteudo-atividade/twitter.svg" alt="Icone do twitter" class="icon">
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="conteudo-atividade/linkedin.svg" alt="Icone do linkedin" class="icon">
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
-
-        <div id="social-icons">
-            <h6>Redes Sociais</h6>
-            <ul>
-                <li>
-                    <div>
-                        <img src="conteudo-atividade/facebook.svg" alt="Icone do Facebook" class="icon">
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <img src="conteudo-atividade/instagram.svg" alt="Icone do Instagram" class="icon">
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <img src="conteudo-atividade/twitter.svg" alt="Icone do twitter" class="icon">
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <img src="conteudo-atividade/linkedin.svg" alt="Icone do linkedin" class="icon">
-                    </div>
-                </li>
-            </ul>
-        </div>
-
-        <div class="divisor"></div>
-
-        <section id="copyright">
-            <p>© 2025 EduTech Academy. Todos os direitos reservados</p>
-        </section>
     </footer>
+    <div class="divisor"></div>
+    <section id="copyright">
+        <p>© 2025 EduTech Academy. Todos os direitos reservados.</p>
+    </section>
 </body>
 
 </html>

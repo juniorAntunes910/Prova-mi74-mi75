@@ -219,6 +219,14 @@ input {
     padding: 0.5rem;
 }
 
+.label-mobile{
+    display: flex;
+    flex-direction: column;
+}
+.label-mobile input{
+    width: 100%;
+}
+
 button {
     width: 95%;
     background-color: var(--cor-principal-claro);
@@ -290,6 +298,10 @@ footer p {
     display: flex;
     margin-top: 1rem;
     margin-bottom: 2rem;
+    text-align: center;
+    font-size: 1rem;
+    color: gray;
+
 }
 
 
@@ -398,14 +410,115 @@ footer p {
         width: 100%;
         margin-top: auto;
     }
-
     .content-infos-btn p {
         font-size: 1.3rem;
         font-weight: 600;
         font-family: var(--font-titulo);
     }
 
+
+    /*Matricula*/
+
+    #matricula-aside{
+        display: flex;
+        gap: 3rem;
+        margin-top: 3rem;
+    }
+
+
+    #matricula{
+        flex: 2;
+        width: 70%;
+        margin-bottom: 2rem;
+
+    }
+
+
+    .form-desktop{
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .label-desktop{
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #label-estado{
+        max-width: 48.5%;
+    }
+
+    button{
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #form-btn{
+        display: flex;
+        justify-content: flex-start;
+        width: 20%;
+    }
+
+   
+
+
+   
+
+/*Aside*/
+
+    aside{
+        flex: 1;        
+        height: 40%;  
+    }
+
+    aside h6{
+        font-size: 1.2rem;
+    }
+
+    aside ul li{
+        margin-bottom: 1rem;
+        font-size: 0.9rem;
+        font-weight: 600;
+    }
+
+
+    /*Footer*/
     
 
+    footer{
+        margin-top: 1rem;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    #footer-desktop{
+        display: flex;
+        width: 80%;
+        gap: 19rem;
+        margin: 0 auto;
+    }
+
+    #social-icons{
+        margin-bottom: 3rem;
+    }
+
+    #marca{
+        margin-bottom: 2rem;
+    }
+
+    /*Copyright*/
+
+    #copyright{
+        justify-content: center;
+        padding: 1rem;
+        color: gray;
+    }
 
 }
