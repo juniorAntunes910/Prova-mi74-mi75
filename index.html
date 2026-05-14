@@ -13,7 +13,7 @@
         <nav class="container">
             <div class="menu-header">
                 <div class="logo">
-                    <img src="conteudo-atividade/logo.svg" alt="Logo edutech">
+                    <a href="index.html"><img src="conteudo-atividade/logo.svg" alt="Logo edutech"></a>
                     <h3>Edutech Academy</h3>
                 </div>
                 <div id="header-desktop">
@@ -31,11 +31,23 @@
                             <a href="#">Sobre</a>
                         </li>
                     </ul>
+                    <button id="mudar-tema">
                     <div>
-                        <img src="conteudo-atividade/moon.svg" alt="Simbolo Para Ativar o modo Escuro e Claro">
-                    </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-moon">
+                                <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+                            </svg>
+                        </div>
+                    </button>
                 </div>
-                <img src="conteudo-atividade/menu.svg" alt="Menu Hamburguer" id="menu-hamburguer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke=currentColor stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-menu-icon lucide-menu" id="menu-hamburguer">
+                    <line x1="4" x2="20" y1="12" y2="12" />
+                    <line x1="4" x2="20" y1="6" y2="6" />
+                    <line x1="4" x2="20" y1="18" y2="18" />
+                </svg>
             </div>
         </nav>
         <div class="divisor"></div>
@@ -72,7 +84,7 @@
                             </div>
                             <div class="content-infos-btn">
                                 <p>
-                                    Ver detalhes
+                                    <a href="desenvolvimento.html">Ver Detalhes</a>
                                 </p>
                             </div>
                         </div>
@@ -101,7 +113,7 @@
                             </div>
                             <div class="content-infos-btn">
                                 <p>
-                                    Ver detalhes
+                                    <a href="data.html">Ver Detalhes</a>
                                 </p>
                             </div>
                         </div>
@@ -130,7 +142,7 @@
                             </div>
                             <div class="content-infos-btn">
                                 <p>
-                                    Ver detalhes
+                                    <a href="marketing.html">Ver Detalhes</a>
                                 </p>
                             </div>
                         </div>
@@ -160,7 +172,7 @@
                             </div>
                             <div class="content-infos-btn">
                                 <p>
-                                    Ver detalhes
+                                    <a href="ui.html">Ver detalhes</a>
                                 </p>
                             </div>
                         </div>
@@ -184,7 +196,7 @@
                     <form action="#">
                         <div class="form-desktop">
                             <div class="label-desktop label-mobile">
-                                <label for="nome"3>Nome Completo *</label>
+                                <label for="nome" 3>Nome Completo *</label>
                                 <input type="text" placeholder="Digite seu nome completo">
                             </div>
                             <div class="label-desktop label-mobile">
@@ -203,7 +215,12 @@
                             </div>
                         </div>
                         <label for="curso">Curso Desejado *</label>
-                        <input type="text">
+                        <select name="curso" id="dropdown">
+                            <option value="Desenvolvimento">Desenvolvimento Web Fullstack</option>
+                            <option value="Data">Data Science & Machine Learning</option>
+                            <option value="Marketing">Marketing Digital & SEO</option>
+                            <option value="UX ">UX/UI Design</option>
+                        </select>
 
                         <div class="form-desktop">
                             <div class="label-desktop label-mobile">
@@ -336,6 +353,6 @@
     <section id="copyright">
         <p>© 2025 EduTech Academy. Todos os direitos reservados.</p>
     </section>
+    <script src="script.js"></script>
 </body>
-
 </html>
