@@ -33,32 +33,32 @@
     --bordas-divisores-escuro: #444444;
 
 
-    --font-titulo: "Poppins", sans-serif;  
+    --font-titulo: "Poppins", sans-serif;
     --font-texto: "Inter", sans-serif;
 }
 
-*{
+* {
     font-family: var(--font-texto);
 }
 
-ul{
+ul {
     list-style: none;
 }
 
-h1{
+h1 {
     font-family: var(--font-titulo);
 }
 
-.container{
+.container {
     width: 95%;
     margin: 0 auto;
 }
 
-.quebra-mobile{
+.quebra-mobile {
     display: block;
 }
 
-.divisor{
+.divisor {
     height: 1px;
     margin-top: 1rem;
     background-color: var(--bordas-divisores-claro);
@@ -67,18 +67,18 @@ h1{
 
 /*Header*/
 
-.menu-header{
+.menu-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.logo{
+.logo {
     display: flex;
     align-items: center;
 }
 
-.logo h3{
+.logo h3 {
     margin-left: 0.5rem;
     color: var(--cor-principal-claro);
     font-size: 1.4rem;
@@ -88,7 +88,7 @@ h1{
 /* hero */
 
 
-#hero{
+#hero {
     text-align: center;
     font-weight: 600;
     font-family: --font-titulo;
@@ -96,9 +96,9 @@ h1{
 
 }
 
-.texto-hero{
+.texto-hero {
     color: gray;
-    font-family: --font-texto;
+    font-family: var(--font-titulo);
     font-weight: 400;
     font-size: 1.3rem;
     margin-top: 1rem;
@@ -106,30 +106,32 @@ h1{
 
 /*Nossos Cursos*/
 
-#nossos-cursos h2{
+#nossos-cursos h2 {
     margin-top: 3rem;
     margin-bottom: 2rem;
     font-family: var(--font-titulo);
     font-weight: 600;
 }
 
-#cards{
+#cards {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
+    justify-content: center;
 }
 
 .card-box {
     border-radius: 1rem;
+    min-height: 450px;
 }
 
-.card-imagem{
+.card-imagem {
     width: 100%;
     border-radius: 0.75rem;
 }
 
-.card-content-box{
+.card-content-box {
     transform: translateY(-30px);
     border: var(--bordas-divisores-claro) 1px solid;
     background-color: var(--fundo-card-claro);
@@ -137,7 +139,7 @@ h1{
     border-end-start-radius: 1rem;
 }
 
-.card-content-box h5{
+.card-content-box h5 {
     margin-top: 2rem;
     font-size: 1.1rem;
     font-weight: 700;
@@ -147,7 +149,11 @@ h1{
     margin-top: 1rem;
 }
 
-.content-infos{
+.card-content-box img {
+    margin-right: 0.5rem;
+}
+
+.content-infos {
     padding-top: 0.5rem;
     display: flex;
     width: 90%;
@@ -155,13 +161,13 @@ h1{
     color: gray;
 }
 
-.content-infos img{
+.content-infos img {
     max-width: 20px;
     width: 100%;
 }
 
 
-.content-infos-btn{
+.content-infos-btn {
     max-width: 85%;
     background-color: var(--cor-principal-claro);
     margin: 0 auto;
@@ -179,52 +185,52 @@ h1{
 
 /*Matricula*/
 
-#matricula{
+#matricula {
     margin-top: 1rem;
     display: flex;
     flex-direction: column;
 }
 
-#matricula h5{
+#matricula h5 {
     font-size: 1.5rem;
     margin-bottom: 1.5rem;
 }
 
-#matricula-box{
+#matricula-box {
     border: gray solid 0.5px;
     border-radius: 1rem;
     padding: 1rem;
     margin-bottom: 4rem;
 }
 
-#matricula-box h6{
+#matricula-box h6 {
     font-size: 1.2rem;
     margin-bottom: 1rem;
 }
 
-form{
+form {
     display: flex;
     flex-direction: column;
     gap: 0.2rem;
 }
 
-input{
+input {
     margin-bottom: 1rem;
     padding: 0.5rem;
 }
 
-button{
+button {
     width: 95%;
     background-color: var(--cor-principal-claro);
     padding: 0.5rem;
-    margin: 0 auto; 
+    margin: 0 auto;
     color: var(--fundo-card-claro);
     border: none;
     border-radius: 0.5rem;
     font-family: var(--font-titulo);
 }
 
-aside{
+aside {
     display: flex;
     flex-direction: column;
     border: var(--bordas-divisores-claro) solid 1px;
@@ -234,24 +240,24 @@ aside{
     gap: 8px;
 }
 
-aside h6{
+aside h6 {
     font-size: 1rem;
     margin-bottom: 1rem;
     font-family: var(--font-titulo);
 }
 
-aside ul li{
+aside ul li {
     margin-bottom: 0.5rem;
 }
 
 
 /*Footer*/
 
-#divisao-footer{
+#divisao-footer {
     margin-top: 4rem;
 }
 
-footer h6{
+footer h6 {
     margin-top: 1rem;
     margin-bottom: 1rem;
     text-align: center;
@@ -259,28 +265,28 @@ footer h6{
     font-family: var(--font-titulo);
 }
 
-footer p{
+footer p {
     color: gray;
     text-align: center;
     font-size: 0.9rem;
 }
 
 
-#contato{
+#contato {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 1rem;
 }
 
-#social-icons ul{
+#social-icons ul {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 1rem
 }
 
-#copyright{
+#copyright {
     display: flex;
     margin-top: 1rem;
     margin-bottom: 2rem;
@@ -289,16 +295,117 @@ footer p{
 
 /*Desktop*/
 
-#header-desktop{
+#header-desktop {
     display: none;
 }
 
-@media screen and (min-width: 1024px){
-    
+@media screen and (min-width: 1024px) {
+
 
     /*Header */
 
-    #header-desktop{
+    #header-desktop {
         display: flex;
+        align-items: center;
+        padding: 1rem;
     }
+
+    #menu-hamburguer {
+        display: none;
+    }
+
+    #header-desktop ul {
+        display: flex;
+        gap: 1.5rem;
+        align-items: center;
+        margin-right: 2rem;
+    }
+
+    #header-desktop ul li a {
+        text-decoration: none;
+        color: var(--fundo-card-escuro);
+        font-size: 1.2rem;
+    }
+
+    #header-desktop ul li.active a {
+        color: var(--cor-principal-claro);
+        font-weight: 700;
+        /* opcional, só pra destacar */
+    }
+
+
+    /* Hero*/
+    .quebra-mobile {
+        display: none;
+    }
+
+    .quebra-desktop {
+        display: block;
+    }
+
+    h1 {
+        margin-top: 1.5rem;
+        font-size: 3.3rem;
+    }
+
+    .texto-hero {
+        font-size: 1.7rem;
+    }
+
+    /*Nossos Cursos*/
+
+    #cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: stretch;
+        /* ISSO faz todos terem o mesmo tamanho vertical */
+        gap: 1.5rem;
+    }
+
+    .card-box {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-content-box {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 1rem;
+        transform: translateY(-30px);
+        margin-bottom: -30px;
+    }
+
+    .card-content-box h5 {
+        min-height: 3.5rem;
+        display: flex;
+        align-items: center;
+        margin-bottom: 0.5rem;
+        font-size: 1.6rem;
+    }
+
+    .content-infos {
+        margin-bottom: 0.5rem;
+        font-size: 1.3rem;
+    }
+
+    .content-infos-btn {
+        padding: 0.2rem;
+        align-items: center;
+        width: 100%;
+        margin-top: auto;
+    }
+
+    .content-infos-btn p {
+        font-size: 1.3rem;
+        font-weight: 600;
+        font-family: var(--font-titulo);
+    }
+
+    
+
+
 }
